@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <title>Shruti website</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            /* border: 1px solid red;  */
+
+        }
+
+        .table1 {
+            width: 100%;
+
+
+        }
+
+
+        .tdclass {
+            text-align: center;
+
+        }
+
+        .tdcall {
+            padding-left: 82%;
+            padding-top: 28px;
+            height: 40px;
+            width: 600px;
+        }
+
+        .image {
+            /* padding-left: 50px; */
+            /* padding-right: 200px; */
+            height: 50px;
+            width: 100px;
+
+        }
+
+        .div {
+            padding: 15px;
+            font-size: 20px;
+            color: white;
+            float: right;
+
+            background-color: #ff8000;
+            border-radius: 5px;
+            margin-right: 20px;
+            margin-top: 17px;
+
+
+        }
+
+        .one {
+            font-size: 50px;
+            text-align: center;
+            color: white;
+            font-weight: 1000;
+
+            text-align: center;
+            padding: 25px;
+            margin-top: 40px;
+        }
+
+        #path {
+            color: #ff8000;
+        }
+
+        #life {
+
+            color: #ff8000;
+        }
+
+
+
+
+
+        .img3times {
+            background-image: url("pic1.png");
+        }
+
+
+        .imag {
+            height: auto;
+            width: 33%;
+            margin: auto;
+        }
+
+        .images {
+            height: auto;
+            width: 33%;
+            margin: auto;
+        }
+
+        .images:hover {
+            filter: contrast(30%);
+        }
+
+        .headin {
+            font-size: 100px;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .container {
+            position: relative;
+            display: none;
+        }
+
+        .img-text2 {
+            position: absolute;
+            left: 33.3%;
+            top: -500px;
+            height: 495px;
+            width: 33%;
+            background-color: black;
+            opacity: 50%;
+            color: white;
+            font-size: 35px;
+        }
+
+        .img-text3 {
+            position: absolute;
+            top: -500px;
+            left: 66.6%;
+            height: 495px;
+            width: 33%;
+            background-color: black;
+            opacity: 50%;
+            color: white;
+            font-size: 35px;
+        }
+
+        .img-text-p {
+            padding-top: 80px;
+            font-size: 40px;
+            line-height: 60px;
+            text-align: center;
+        }
+
+        .btn {
+            margin-top: 15px;
+            text-align: center;
+            padding: 25px;
+            margin-left: 20%;
+            font-size: 20px;
+            background-color: #ff8000;
+            color: white;
+            border-radius: 15px;
+        }
+
+        .arrow {
+            margin-top: 40px;
+            margin-left: 110px;
+            transition: 6s;
+
+        }
+
+        .money {
+            margin-top: 40px;
+            margin-left: 150px;
+            transition: 6s;
+        }
+
+        .document {
+            margin-top: 40px;
+            margin-left: 150px;
+            transition: 6s;
+        }
+
+        .way {
+            margin-top: 40px;
+            margin-left: 150px;
+            transition: 6s;
+        }
+
+        .main {
+            height: 200px;
+            width: 100%;
+            background-color: black;
+            color: white;
+        }
+
+        .first {
+            height: 80px;
+            width: 100%;
+            display: flex;
+        }
+
+        .zero li {
+            display: inline;
+            font-size: 18px;
+            padding: 15px;
+        }
+
+        #spanid {
+            background-color: #ff8000;
+            color: white;
+            border-radius: 7px;
+            font-size: 22px;
+            padding: 15px;
+        }
+
+        #spanid a {
+            color: white;
+            text-decoration: none;
+
+        }
+
+        .zero {
+            width: 70%;
+            margin-top: 30px;
+            float: right;
+
+        }
+
+        .first1 {
+            width: 30%;
+            margin-left: 5%;
+        }
+
+        .first2 {
+            width: 70%;
+        }
+
+        .mainpic {
+            height: 500px;
+            width: 100%;
+
+            display: flex;
+        }
+
+        .star1 {
+            width: 33.33%;
+            height: 500px;
+
+            background-image: url(pic1.png);
+            background-size: cover;
+        }
+
+        .star2 {
+            width: 33.33%;
+            height: 500px;
+            background-size: cover;
+            background-image: url(pic22.png);
+        }
+
+        .star3 {
+            width: 33.33%;
+            height: 500px;
+            background-size: cover;
+            background-image: url(pic33.png);
+        }
+
+        .z1 {
+            height: 100%;
+            width: 100%;
+            background-color: black;
+            opacity: 40%;
+            display: none;
+            color: azure;
+            font-size: 40px;
+            text-align: center;
+            position: relative;
+        }
+
+        .z1 a {
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            padding: 15px;
+            background-color: #ff8000;
+            border-radius: 5px;
+            position: absolute;
+            bottom: 50px;
+            left: 16%;
+            text-align: center;
+
+        }
+
+        .z1 p {
+            padding-top: 90px;
+        }
+
+        .star1:hover .z1 {
+            display: block;
+        }
+
+        .star2:hover .z1 {
+            display: block;
+        }
+
+        .star3:hover .z1 {
+            display: block;
+        }
+
+        .flex-container {
+            display: flex;
+            /* animation-name: flex-container; */
+            transition: 6s;
+            transition: 5s;
+        }
+
+        @keyframes flex-container {
+            from {
+                margin-top: -10%;
+            }
+
+            to {
+                margin-top: 0;
+            }
+        }
+
+
+        .scheduleacall button {
+
+            font-size: 30px;
+            padding: 20px;
+            cursor: pointer;
+            border-radius: 7px;
+            color: white;
+            width: 370px;
+            margin-left: 480px;
+            margin-top: 60px;
+        }
+
+
+
+
+        .step7 {
+            height: 100%;
+            width: 100%;
+            margin-top: 60px;
+            background-color: rgb(0, 192, 209);
+            display: flex;
+        }
+
+
+
+        .childh {
+            font-size: 80px;
+            color: white;
+            margin-left: 10%;
+            margin-top: 70px;
+        }
+
+        .childp {
+            font-size: 40px;
+            color: white;
+            color: white;
+        }
+
+
+
+        button {
+            margin-left: 20px;
+            margin-top: 10px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            padding: 20px;
+            width: 270px;
+            font-size: 30px;
+            background-color: #ff8000;
+            color: white;
+            border: none;
+        }
+
+
+
+
+
+
+
+        .imghand1 {
+            padding: 80px;
+            margin-top: 15px;
+        }
+
+        .imghand2 {
+            padding: 80px;
+            margin-top: 15px;
+        }
+
+        .imghand3 {
+            padding: 80px;
+            margin-top: 15px;
+        }
+
+        .parent3 {
+            margin-right: 9%;
+            margin-top: 60px;
+
+        }
+
+        .child32 {
+            margin-top: 68px;
+
+        }
+
+        .child33 {
+            margin-top: 68px;
+
+        }
+
+        .mainid {
+            font-size: 30px;
+            color: white;
+            width: 100%;
+
+        }
+
+        .mainp {
+            font-size: 20px;
+            color: white;
+            line-height: 38px;
+        }
+
+        .imgcontainer {
+            height: 100vh;
+            width: 99vw;
+            filter: brightness(50%);
+            background-image: url(bgrect.jpg);
+            background-size: cover;
+
+        }
+
+        .playimg {
+            filter: none;
+            margin-top: 10%;
+        }
+
+        .paragraph {
+
+            font-size: 50px;
+            font-style: italic;
+            text-align: center;
+            font-weight: bold;
+            margin: 10% 10%;
+            margin-bottom: 30px;
+        }
+
+        .childp {
+            color: white;
+            font-size: 25px;
+            margin-top: 20px;
+            font-style: normal;
+        }
+
+        .content {
+            font-size: 10px;
+            color: white;
+        }
+
+        .sunset {
+            background-image: url("sunset.jpg");
+            background-size: cover;
+            height: auto;
+            width: 100%;
+        }
+
+        .content {
+            font-size: 80px;
+            color: white;
+            padding-top: 25px;
+
+        }
+
+        .lastline {
+            font-size: 30px;
+            color: white;
+        }
+
+        .container_3 {
+            display: flex;
+            padding-top: 30px;
+            width: 100%;
+        }
+
+        .work {
+            width: 30%;
+            margin-left: 2%;
+            padding: 0 20px;
+        }
+
+        .work img {
+            margin-left: 50%;
+            padding-top: 20px;
+            transform: translateX(-50%);
+        }
+
+        .retired {
+            width: 30%;
+            margin-left: 3%;
+            padding: 0 20px;
+        }
+
+        .retired img {
+            margin-left: 50%;
+            padding-top: 20px;
+            transform: translateX(-50%);
+        }
+
+        .nearing {
+            width: 30%;
+            margin-left: 3%;
+            margin-right: 2%;
+            padding: 0 20px;
+        }
+
+        .nearing img {
+            margin-left: 50%;
+            padding-top: 20px;
+            transform: translateX(-50%);
+        }
+
+        .work:hover {
+            background-color: rgb(247, 168, 22);
+        }
+
+        .retired:hover {
+            background-color: rgb(247, 168, 22);
+        }
+
+        .nearing:hover {
+            background-color: rgb(247, 168, 22);
+        }
+
+        .markp {
+            color: white;
+            text-align: center;
+            line-height: 25px;
+            padding-bottom: 20px;
+        }
+
+        .workp {
+            color: white;
+            text-align: center;
+
+        }
+
+        .blackimg {
+            background-color: black;
+            height: auto;
+            width: 100%;
+            display: flex;
+            text-align: justify;
+            padding-top: 40px;
+            padding-bottom: 30px;
+        }
+        .blackimg1{
+            color: white;
+            width: 28%;
+            margin-left: 5%;
+            
+        }
+        .blackimg p {
+            line-height: 25px;
+        }
+        .blackimg2{
+            color: white;
+            width: 22%;
+            margin-left: 9%;
+        }
+        .blackimg2 ul li{
+            list-style: none;
+            line-height: 25px;
+        }
+        .blackimg3{
+            color: white;
+            width: 22%;
+            margin-left: 9%;
+            margin-right: 5%;
+        }
+        .blackimg3 ul li {
+            list-style: none;
+            line-height: 25px;
+        }
+
+        .blackimg_h2 {
+            color: rgb(247, 168, 22);
+            padding-bottom: 30px;
+        }
+
+        .copyright {
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <div class="first">
+        <div class="first1">
+            <img src="logo.png" alt="">
+        </div>
+        <div class="first2">
+            <ul class="zero">
+                <li>About</li>
+                <li>How we work</li>
+                <li> How we paid</li>
+                <li><span id="spanid"><a href="">Schedule a call </a></span></li>
+            </ul>
+        </div>
+    </div>
+
+
+
+    <div class="main">
+        <h1 class="one">WE CREATE <span id="path">PATHWATS</span> TO EXPERIENCE <span id="life">LIFE ON YOUR
+                TERMS</span></h1>
+    </div>
+
+    <div class="mainpic">
+        <div class="star1"></div>
+        <div class="star2">
+            <div class="z1">
+                <p>“I want professional advice before I make a significant investment. Will it derail my financial
+                    goals?”</p>
+                <a href="#" id="btn1">You can Never Be Too Careful</a>
+            </div>
+
+        </div>
+        <div class="star3">
+            <div class="z1">
+                <p>“I want professional advice before I make a significant investment. Will it derail my financial
+                    goals?”</p>
+                <a href="#" id="btn2">You can Never Be Too Careful</a>
+            </div>
+
+        </div>
+    </div>
+
+
+    </div>
+    </div>
+    <h1 class="headin">We believe no matter what stage of life you're in...</h1>
+
+    <div class="flex-container">
+        <div class="arrow" data-aos="fade-down-left" style="transition: 5s;"><img src="arrowlogo.png" alt="">
+            <p>
+                A life managed well is not ruled by numbers & plans, but freed by them.
+            </p>
+        </div>
+
+        <div class="money" data-aos="fade-down-left" style="transition: 5s;"> <img src="moneylogo.png" alt="">
+            <p>A life managed well is not ruled by numbers & plans, but freed by them</p>
+        </div>
+        <div class="document" data-aos="fade-down-left" style="transition: 5s;"> <img src="documentlogo.png" alt="">
+            <p>Poor decisions are too often made because of a lack of clarity.</p>
+        </div>
+        <div class="way" data-aos="fade-down-left" style="transition: 5s;">
+            <img src="waylogo.png" alt="">
+            <p>This industry’s model ofrewarding good sales over good advice is outdated.</p>
+        </div>
+
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <div class="scheduleacall">
+        <button>Schedule A Call</button>
+    </div>
+
+    <div class="step7">
+
+
+        <div class="childh">
+            <h>We are</h><br>
+            <h>independent</h><br>
+            <h>financial </h><br>
+            <h> planning & life </h><br>
+
+            <h> management</h><br>
+            <h> coaches</h>
+
+
+            <p class="childp">
+                You want to trust that your financial plans & future are managedwell. </p>
+
+            </center> <button>Schedule A Call</button>
+
+
+
+        </div>
+
+
+
+
+        <div>
+            <img class="imghand1" src="hand.png" alt="">
+
+
+            <img class="imghand2" src="hand.png" alt="">
+
+
+
+            <img class="imghand3" src="hand.png" alt="">
+
+        </div>
+
+
+        <div class="parent3">
+            <div class="child31">
+                <h3 class="mainid">FIDUCIARY</h3>
+
+                <p class="mainp">Big word...simple concept. At the core of our business is doing what’s best for
+                    YOU, not us.</p>
+            </div>
+
+
+
+            <div class="child32">
+                <h3 class="mainid">COMMISSION-FREE</h3>
+                <p class="mainp">Commissions suck the life out of your financial portfolio. Our transparent fee
+                    schedule makes it clear and easy to understand how we get paid. No hidden fees, ever</p>
+            </div>
+
+
+
+            <div class="child33">
+                <h3 class="mainid">CFP®️ PROFESSIONAL</h3>
+
+                <p class="mainp">A highly desired, and not-easy-to-achieve designation that ensures we’re
+                    always improving ourselves and our knowledge so we can serve you better.</p>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <div class="imgcontainer">
+        <center><img class="playimg" src="play.png" height="250px" width="250px"></center>
+    </div>
+
+
+
+
+
+    <div class="paragraph">
+        <p>“But in the end, financial decisions aren’t about getting rich. They’re about getting what you want—getting
+            happy."
+
+        </p>
+        <p class="childp">Carl Richards, The Behavior Gap</p>
+    </div>
+
+
+    <div class="sunset">
+
+
+        <div class="content">
+            <center> Life Managed Case Studies</center>
+        </div><br>
+        <div class="lastline">
+            <center>Lorem ipsum dolor sit amet, consectetur adipiscing elit,</center>
+        </div>
+        <div class="container_3">
+            <div class="work"><img src="work.png" alt="">
+                <h2 class="workp">WORK OPTIONAL</h2>
+                <p class="markp">Mark and Jennifer don’t have a set date for retirement — not
+                    because they can’t retire, but because they’re not sure they ever want
+                    to stop working completely
+                </p>
+                <button>Click Me</button>
+            </div>
+
+            <div class="retired"><img src="retired.png" alt="">
+                <h2 class="workp">RETIRED</h2>
+                <p class="markp">Mark and Jennifer don’t have a set date for retirement — not
+                    because they can’t retire, but because they’re not sure they ever want
+                    to stop working completely
+                </p>
+                <button>Click Me</button>
+            </div>
+
+            <div class="nearing">
+                <img src="nearing.png" alt="">
+                <h2 class="workp">NEARING</h2>
+                <p class="markp">Mark and Jennifer don’t have a set date for retirement— not
+                    because they can’t retire, but because they’re not sure they ever want
+                    to stop working completely
+                </p>
+                <button>Click Me</button>
+            </div>
+
+
+
+        </div>
+        <div class="blackimg">
+            <div class="blackimg1">
+                <h2 class="blackimg_h2">ABOUT LIFE MANAGED</h2>
+                <p>The material on our website is for informational purposes only. We are not asking you to buy or sell
+                    a security and are not offering you investment advice.Information on our website is believed to be
+                    reliable. Please understand it is not guaranteed. Past performance is not a guarantee. It is also
+                    not reliable indicator of future results. Investing means taking risks. Your account value could
+                    decline or rise a lot</p>
+                <p class="copyright">© 2023 shruti All rights reserved.
+
+
+                </p>
+            </div>
+            <div class="blackimg2">
+                <h2 class="blackimg_h2">OUR LINKS</h2>
+                <ul>
+                    <li>Home</li>
+                    <li> About</li>
+                    <li> How we Work</li>
+
+                    <li> How we paid</li>
+                    <li> Shedule a call</li>
+                </ul>
+            </div>
+            <div class="blackimg3">
+                <h2 class="blackimg_h2">CONTACT US</h2>
+                <ul><li>134 N. Central Ave., Suite 104</li>
+                    <li> Phoenix, AZ 85012</li> 
+                    <li>phone:(602)931-5043</li>  
+                    <li>Email:info@lifemanged.com</li>  </ul>
+
+            </div>
+        </div>
+
+
+
+</body>
+
+</html>
